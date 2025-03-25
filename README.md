@@ -112,3 +112,67 @@ This is state that needs to be shared or accessed by multiple widgets.
 - Plugins are a subset of packages that are specifically designed for interfacing with platform-specific, native code or services.  
 - "package" contains only Dart code.  
 "plugin" contains both Dart and Native code (kotlin/js/swift/...)
+
+
+## 10. What language does Flutter use for app development?
+Flutter is a UI toolkit for building natively compiled applications, uses the Dart programming language for app development.  
+Flutter draws its strengths from the powerful Dart programming language. Dart, designed by Google.  
+Dart allows Flutter to create apps that run on multiple platforms, including mobile (Android and iOS), web, and desktop.
+
+
+## 11. How do you create a scrollable list in Flutter?
+Two primary choices for Create a scrollable list in Flutter : ListView and GridView.
+- **ListView** : Vertical or horizontal scrollable list.
+- **GridView** : Grid-based list - can be scrollable in both axes.
+#### Listview Types : 
+**ListView** : Basic vertical list.  
+**ListView.builder** : Recommended for large datasets to render on-demand.  
+**ListView.separated** : Useful for adding separate dividers or specific items between list items.  
+
+#### GridView Types
+**GridView.builder** : Like ListView.builder, it's best for large datasets to render on-demand for performance reasons.  
+**GridView.count** : For a fixed number of grid columns or rows.  
+**GridView.extent** : Specifies the maximum cross-axis extent of each grid item.  
+**GridView.staggered** : For grid items of varying sizes.
+
+
+## 12.Flutter app lifecycle.
+The Flutter app lifecycle describes the different states an app transitions through during its execution, including starting, running in the foreground, being paused in the background, and eventually being terminated.  
+The lifecycle refers to the various states an app goes through from its launch to its termination.
+- **Resumed** : Running and fully visible.
+- **Inactive** : Visible but can't interact, often during calls.
+- **Paused** : The app is either partially visible or fully covered.
+
+
+## 13. How do you handle user input in Flutter?
+In Flutter, you handle user input primarily using widgets like **TextField** and **TextFormField**.
+**Flutter** offers various widgets to manage user input, including textual, selection-based, and platform-specific inputs.
+
+#### Common Input Widgets
+
+- **Text**: For basic textual input
+- **TextField**: Provides a more comprehensive experience, supporting gestures such as tapping and dragging
+
+#### Text Input
+
+- **TextField**: Offers robust text entry capabilities, including keyboard input, selection, and auto-correction.
+- **CupertinoTextField**: Customized for iOS to maintain platform familiarity.
+
+#### Numerical Input
+
+- **CupertinoTextFormField**: Optimized for numerical input in iOS.
+- **TextField**: Set the input type to **TextInputType.number**.
+
+#### Password Input
+
+- **CupertinoTextField**: Utilize the `obscureText` property within a Material-based or Cupertino-styled **TextFormField**.
+
+
+## 14. Explain the purpose of the `main.dart` file.
+
+In a Flutter project, **main.dart** serves as the **entry point** for the application. When you run your Flutter app, this is the first file that gets called.
+
+#### File Structure
+
+1. **Lib Directory**: This is the default location for all of your Dart code files.
+2. **Asset Directory**: For resources such as images, fonts, and data files.
